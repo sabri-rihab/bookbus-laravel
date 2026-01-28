@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
@@ -57,3 +58,38 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+=======
+# BookBus
+
+## Description
+BookBus is a web application built with Laravel for online bus ticket reservation.  
+It allows users to search for bus trips, select seats, and book tickets easily.
+
+## Installation Instructions
+
+```bash
+# 1. Clone the repository
+git clone https://github.com/your-username/bookbus-laravel.git
+cd bookbus-laravel
+
+# 2. Install dependencies
+composer install
+
+# 3. Create the environment file
+cp .env.example .env
+
+# 4. Configure the environment
+# Open .env and set your database credentials, for example:
+# DB_DATABASE=bookbus
+# DB_USERNAME=root
+# DB_PASSWORD=
+
+# 5. Generate application key
+php artisan key:generate
+
+# 6. Run database migrations
+php artisan migrate
+
+# 7. Start the development server
+php artisan serve
+>>>>>>> 8d8e1f2367bdb54c0cc9b2a3cb7708ca8510ced4
