@@ -7,6 +7,18 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+
+Route::get('/reservation', function () {
+    return 'make a reservation';
+});
+
+
+Route::get('/historique', function () {
+    return 'view histroriques';
+});
+
+
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
