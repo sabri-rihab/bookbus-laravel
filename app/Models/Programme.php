@@ -3,15 +3,15 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use App\Models\Bus;
 
-class Step extends Model
+class Programme extends Model
 {
-    protected $table = 'step';
-
+    protected $table = 'programme';
     protected $fillable = [
         'route_id',
-        'station_id',
-        'step_order',
+        'bus_id',
+        'travel_date',
     ];
 
     public function route()
@@ -19,8 +19,8 @@ class Step extends Model
         return $this->belongsTo(Route::class);
     }
 
-    public function station()
+    public function bus()
     {
-        return $this->belongsTo(Station::class);
+        return $this->belongsTo(Bus::class);
     }
 }
